@@ -1,1 +1,1 @@
-this repo contains terraform files tested on AWS Account
+this repo contains terraform files tested on GITHUB Account
