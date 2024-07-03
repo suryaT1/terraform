@@ -1,4 +1,4 @@
-Download path for Terraform on your system :
+Download Terraform on your system :
 
 https://developer.hashicorp.com/terraform/install?product_intent=terraform
 
