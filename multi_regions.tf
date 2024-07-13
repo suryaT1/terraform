@@ -1,9 +1,13 @@
 provider "aws" {
     region = "sa-east-1"
+    access_key = var.acc
+    secret_key = var.sec
 }
 provider "aws" {
   region = "eu-west-1"
   alias = "eu_west"
+    access_key = var.acc
+    secret_key = var.sec
 }
 variable "ami_id" {
   default = "ami-12345"  #sa-east-1
