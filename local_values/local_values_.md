@@ -15,14 +15,16 @@ Please refer below example
 
 #############################
 ```
-locals {
-  environment = "production"
-  instance_type = local.environment == "production" ? "m5.large" : "t2.micro"
+locals {   #defining locals 
+  machine = ["first","second","third"]
 }
-
-resource "aws_instance" "example" {
-  ami           = "ami-123456"
-  instance_type = local.instance_type
+resource "aws_instance" "multi_ec2" {
+    ami = "1234556"
+   instance_type = "t2.micro"
+   count = length(**local**.machine)  #calling locals
+   tags = {
+    Name = element(**local**.machine,count.index)
+}
 }
 ```
 
