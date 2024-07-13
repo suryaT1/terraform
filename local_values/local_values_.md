@@ -13,8 +13,8 @@ locals {
 Please refer below example
 
 ################################
-
-__locals {
+<sup>
+locals {
   machine = ["first","second","third"]
 }
 resource "aws_instance" "multi_ec2" {
@@ -24,6 +24,7 @@ resource "aws_instance" "multi_ec2" {
    tags = {
     Name = element(**local.machine**,count.index)
 }
-}_
-_
+}
+</sup>
+
 in the above example two times locals used **local**
