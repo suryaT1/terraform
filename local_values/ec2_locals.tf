@@ -28,8 +28,7 @@ locals {   #locals block
 
 resource "aws_instance" "multi_ec2" {  #resource block
     ami = lookup(local.ami_ids,var.region_name) #using lookup function
- /* lookup = lookup (map , ref value )
-in the above line 
+ /* lookup = lookup (map , ref value ) in the above line 
 local.ami_ids = sa-east-1 = "ami-123"
     eu-west-1 = "ami-456"
     na-south-1 = "ami-789"
