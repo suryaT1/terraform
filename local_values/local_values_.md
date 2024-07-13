@@ -15,15 +15,14 @@ Please refer below example
 #############################
 
 locals {
-  machine = ["first","second","third"]
+  environment = "production"
+  instance_type = local.environment == "production" ? "m5.large" : "t2.micro"
 }
-resource "aws_instance" "multi_ec2" {
-    ami = "123456"
-   instance_type = "t2.micro"
-   count = **length(local.machine)**  # length function obtains the numerical values , here values is 3
-   tags = {
-    Name = element(**local.machine**,count.index)
+
+resource "aws_instance" "example" {
+  ami           = "ami-123456"
+  instance_type = local.instance_type
 }
-}
+
 
 in the above example two times locals used **local**
