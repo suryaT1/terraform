@@ -1,1 +1,1 @@
-please refer [function_doc]{https://developer.hashicorp.com/terraform/language/functions}
+please refer [function_doc](https://developer.hashicorp.com/terraform/language/functions)
