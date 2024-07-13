@@ -4,10 +4,11 @@ local values has same as variables in terarform ,but we can write functions or e
 in variables we can't write any logics that's why locals has a vast scope in real time
 
 syntax of locals :
-
+```
 locals {
  "local_name" = # 
  }
+```
 
 **Note **: In terraform we mention as locals in block but whenever we reference the locals we need to use **"local"** only.
 Please refer below example
