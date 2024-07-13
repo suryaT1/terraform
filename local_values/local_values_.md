@@ -21,9 +21,9 @@ locals {   #defining locals
 resource "aws_instance" "multi_ec2" {
     ami = "1234556"
    instance_type = "t2.micro"
-   count = length(**local**.machine)  #calling locals
+   count = length(local.machine)  #calling locals
    tags = {
-    Name = element(**local**.machine,count.index)
+    Name = element(local.machine,count.index)
 }
 }
 ```
