@@ -13,7 +13,7 @@ locals {
 Please refer below example
 
 #############################
-'''
+```
 locals {
   environment = "production"
   instance_type = local.environment == "production" ? "m5.large" : "t2.micro"
@@ -23,6 +23,6 @@ resource "aws_instance" "example" {
   ami           = "ami-123456"
   instance_type = local.instance_type
 }
-'''
+```
 
 in the above example two times locals used **local**
