@@ -11,6 +11,7 @@ locals {
 
 **Note **: In terraform we mention as locals in block but whenever we reference the locals we need to use **"local"** only.
 Please refer below example
+
 ################################
 
 locals {
