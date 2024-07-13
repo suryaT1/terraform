@@ -12,8 +12,8 @@ locals {
 **Note **: In terraform we mention as locals in block but whenever we reference the locals we need to use **"local"** only.
 Please refer below example
 
-################################
-<sub>
+#############################
+
 locals {
   machine = ["first","second","third"]
 }
@@ -25,6 +25,5 @@ resource "aws_instance" "multi_ec2" {
     Name = element(**local.machine**,count.index)
 }
 }
-</sub>
 
 in the above example two times locals used **local**
