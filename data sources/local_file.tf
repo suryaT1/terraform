@@ -8,5 +8,5 @@ data "local_file" "loc" {
 }
 
 output "loc_value" {
-  value = data.local_file.loc.content
+  value = data.local_file.loc.content   #updating content to get the actual data inside the text file
 }
