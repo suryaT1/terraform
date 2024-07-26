@@ -6,10 +6,10 @@ syntax :
 
 **remote state :**
 
-/// module "iam" {     #resource name
+// module "iam" {     #resource name
   source  = "terraform-aws-modules/iam/aws"  #source is required
   version = "5.41.0"  #version of the source
-} ///
+} //
 
 **local modules**
 
