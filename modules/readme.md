@@ -1,4 +1,4 @@
-**Modules** : ** Modules are self-contained packages of Terraform configurations that are managed as a group. **
+**Modules** :  **Modules are self-contained packages of Terraform configurations that are managed as a group.**
 
 link : [modules](https://registry.terraform.io/browse/modules)
 
