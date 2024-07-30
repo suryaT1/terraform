@@ -11,3 +11,9 @@
   remote-exec - performs actions on remote machine 
 
 ```
+
+
+
+file :
+
+![image](https://github.com/user-attachments/assets/eba2632e-646b-4d5c-b109-84d07d5feb75)
