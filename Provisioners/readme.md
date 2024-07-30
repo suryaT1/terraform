@@ -1,6 +1,6 @@
 **Terraform includes the concept of provisioners as a measure of pragmatism, knowing that there are always certain behaviors that cannot be directly represented in Terraform's declarative model**
 
-/// **Providers are 3 types** ///
+` **provisioners are 3 types** `
 
 ```  
 
