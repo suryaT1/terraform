@@ -20,7 +20,8 @@ it will create separate terraform state files for each workspace and stores in *
 refer [state files ](terraform.tfstate.d)
 
 
-``` **Usage: terraform [global options] workspace**
+```
+**Usage: terraform [global options] workspace**
 
   new, list, show, select and delete Terraform workspaces.
 
