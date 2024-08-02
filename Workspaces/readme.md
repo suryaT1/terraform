@@ -17,4 +17,4 @@
 
 it will create separate terraform state files for each workspace and stores in **Workspaces/terraform.tfstate.d** 
 
-refer [state files ](Workspaces/terraform.tfstate.d)
+refer [state files ](terraform.tfstate.d)
